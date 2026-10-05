@@ -1,0 +1,16 @@
+{
+  "record_role": "validation_of_this_public_source_copy",
+  "validation_date": "2026-10-06",
+  "toolkit_tests": {"passed": 28, "skipped": 0, "actual_generated_media_decode_included": true},
+  "installer_music_tests": {"passed": 4},
+  "official_skill_validators": {"passed": 3, "UTF8_mode": true},
+  "independent_publication_review": {
+    "all_files_text_only": true,
+    "real_machine_paths_or_usernames_found": false,
+    "credential_patterns_found": false,
+    "local_markdown_links_resolve": true,
+    "case_summary_provenance_hashes_match": true,
+    "original_author_profile_values_preserved": true
+  },
+  "limits": "Source-copy validation only. Generated test media is temporary and not published. No new native GUI, second-computer, full visual or listening acceptance is asserted. Credential-pattern scanning is not a proof that arbitrary secrets can always be detected."
+}

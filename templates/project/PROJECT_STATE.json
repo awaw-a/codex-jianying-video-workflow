@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "project_id": null,
+  "project_name": "",
+  "profile_path": "~/.agents/video-workflow/user-profile.json",
+  "workflow_toolkit_path": "~/.agents/video-workflow/toolkit/video_workflow.py",
+  "phase": "planning",
+  "constraints": {
+    "revision": 1,
+    "profile_revision": null,
+    "snapshot_path": null,
+    "project_overrides": {}
+  },
+  "clocks": {
+    "timeline": {
+      "fps": null,
+      "unit": "frame",
+      "end_exclusive": true
+    }
+  },
+  "paths": {
+    "media_manifest": "assets/MEDIA_MANIFEST.json",
+    "edit_plan": "design/EDIT_PLAN.json",
+    "review_root": "review",
+    "delivery_root": "delivery"
+  },
+  "goals": {
+    "purpose": "",
+    "format": {},
+    "music_selection": [],
+    "references": [],
+    "deliverables": []
+  },
+  "editing_owner": {
+    "agent_id": null,
+    "native_write_lock": null,
+    "handoff_ref": null
+  },
+  "artifacts": [],
+  "latest_native_artifact_id": null,
+  "latest_export_artifact_id": null,
+  "protected_paths": [],
+  "evidence": [],
+  "known_issues": [],
+  "pending_user_decisions": [],
+  "next_actions": [],
+  "last_updated_utc": null
+}

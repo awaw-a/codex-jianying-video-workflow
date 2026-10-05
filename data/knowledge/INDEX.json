@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "promotions_require_user_confirmation": true,
+  "entries": [
+    {
+      "id": "jujutsu-v4-case-20261006",
+      "directory": "jujutsu-v4-case",
+      "title": "越过高塔V4：用户反馈与剪映复盘",
+      "scope": "Windows剪映动漫音乐剪辑；版本及素材条件见证据",
+      "status": "evidence_and_candidates_not_automatic_rule_promotion",
+      "candidate_path": "jujutsu-v4-case/经验候选.json",
+      "retrospective_path": "jujutsu-v4-case/复盘.md",
+      "limits": [
+        "没有真实听审",
+        "当前原生与历史导出关系未复验",
+        "跨机原生可编辑性未实测"
+      ]
+    },
+    {
+      "id": "workflow-migration-entrypoint-20261006",
+      "directory": "migration-entrypoint-case",
+      "title": "迁移包入口与工具引用：v1缺口到v2修复",
+      "scope": "独立工程文件迁移与接手；不证明原生UI或跨机兼容",
+      "status": "recorded_authorized_fix_no_additional_rule_promotion",
+      "candidate_path": "migration-entrypoint-case/经验候选.json",
+      "retrospective_path": "migration-entrypoint-case/说明.md",
+      "evidence_map": "migration-entrypoint-case/EVIDENCE_MAP.json"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "record_role": "publication_summary_of_local_validation",
+  "original_validation_date": "2026-10-06",
+  "toolkit_tests_passed": 28,
+  "installer_music_tests_passed": 4,
+  "tests_skipped": 0,
+  "skills_discovered_and_enabled": 3,
+  "skills_behavior_applied": 3,
+  "migration_files_full_hash_checked": 5832,
+  "migration_hash_mismatches": 0,
+  "native_gui_migration_verified": false,
+  "second_computer_tested": false,
+  "human_listening_verified": false,
+  "limits": "Summarized historical local evidence. No original media, project or machine report is distributed."
+}

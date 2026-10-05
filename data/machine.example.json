@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "machine_id": null,
+  "python": null,
+  "ffmpeg": null,
+  "ffprobe": null,
+  "editor_install_root": null,
+  "editor_executable": null,
+  "editor_ui_version_verified": null,
+  "draft_root": null,
+  "source_libraries": [],
+  "preferred_monitor": "secondary_if_confirmed_available",
+  "computer_use_skill": "discover_current_installed_skill",
+  "last_checked_utc": null,
+  "note": "在目标电脑检查并填入本机实际路径，保存到 ~/.agents/video-workflow/machine.json；不要复制旧电脑绝对路径当成已验证环境。"
+}

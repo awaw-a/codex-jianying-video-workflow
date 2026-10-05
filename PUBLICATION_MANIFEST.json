@@ -1,0 +1,406 @@
+{
+  "purpose": "text_only_public_workflow_source",
+  "source_delivery_unchanged": true,
+  "case_evidence_role": "deidentified_publication_summary_not_original_report",
+  "excluded": [
+    "all_media_and_screenshots",
+    "native_projects_and_caches",
+    "source_indexes_and_EDL",
+    "machine_config",
+    "local_delivery_archives",
+    "original_validation_reports"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "8a490e0eb2cb1b7dfcc96eb35e8fde5367ca7b1da28714dcf5f53e8b65967651",
+      "bytes": 223
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "4c99a5da73f2c4f5aab007bc2df3537c1275237b4ccfcfccd17cb2dfe22323a8",
+      "bytes": 940
+    },
+    {
+      "path": "data/knowledge/INDEX.json",
+      "sha256": "c5e3f33409486e62a522d712e4b1b2d73417feb0cfc1c72227c07c0fe02e6f8e",
+      "bytes": 1229
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/PROVENANCE.json",
+      "sha256": "8e2bb80f177e31c4fc137605a589c437ef291535d00dbe26e499dcf532c3b020",
+      "bytes": 4183
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/V3创作质量_独立批评.txt",
+      "sha256": "b1bda20d5a105134f60f2d64c1a388fe9f827c033d544224c087c6f40f411b33",
+      "bytes": 353
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/V4_A24延长尾音新候选.json",
+      "sha256": "54d140c647dd292ff77fd386c84f3064e34c5bf61f2ddf971c06b6b1b79c8d24",
+      "bytes": 502
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/V4交付修正01_歌词与版式实像复核.txt",
+      "sha256": "3418f042d341c341f0bc4763c3057093eb07fc401ce237e611ed945362cbd251",
+      "bytes": 328
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/V4交付版_A24与停止线复核.txt",
+      "sha256": "9d7e468cf3162b8ae2f5b1618b21b028a0344aaa365a3ca37c078ddc1d86b0aa",
+      "bytes": 328
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/V4原生保存文件_明文读取能力只读.json",
+      "sha256": "6e6cd4c35934c816f37c37a0001b29bcda50c5879da535145a557456a69a681b",
+      "bytes": 514
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/V4原生终版完整备份.json",
+      "sha256": "2f1bf8a0568bc2e5302135fdcdc7fd4293efc9aa14f6a39671c9dc93cadb9905",
+      "bytes": 501
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/V4审片01_前景交接独立复核.txt",
+      "sha256": "21f263914df8dc8bf2e74d8a697bb924b346576ffb8b3a55fbedefda25b7807f",
+      "bytes": 328
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/V4新素材_边界与唯一性复核.txt",
+      "sha256": "958cc297e581802f15eba46d976c219763b6b7213d664ffdffd0f2387830db19",
+      "bytes": 325
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/V4本轮原生修改与交付记录.json",
+      "sha256": "0b048343ce2248ba5556e8d69d363a283f941208c600d5c35a1117fb61a8d919",
+      "bytes": 522
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/V4终版_前景交接一致性复核.txt",
+      "sha256": "f41bfdb671072a111b18728588596d0e171b8cb73c7349c38001f8a8aa2801c2",
+      "bytes": 304
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/V4终版导出_解码与响度检查.json",
+      "sha256": "a8d04679b7066cd981c696e5b12af8cdde22f12308cad0e7da5898a7076bb472",
+      "bytes": 488
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/中文漫剪参考核验.txt",
+      "sha256": "542062dd70eed39ff3ac602ae617ac581baa3f7874355d3f494fb516b43b2c47",
+      "bytes": 371
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/剪映11.3自由层级核验.txt",
+      "sha256": "69bd4c1a17d8723612c5fa56d3c911050ec8b0d747964f100b54feb69b0acaee",
+      "bytes": 316
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/剪映11.3蒙版结构核验.txt",
+      "sha256": "780be1bcd1be597a5bcb43e0ed5500f5bfd114dfff1419ec091a51f99342916b",
+      "bytes": 346
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/evidence/重复镜头替换建议.json",
+      "sha256": "0b9debf6464b355ffa27e450b5e06943268872e006e41518f451847f7c4b549f",
+      "bytes": 518
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/复盘.md",
+      "sha256": "3081acda2bb6cf53b613ca57e3fa055c932f8a37124ce6c01ef3bc5516abd3d7",
+      "bytes": 16688
+    },
+    {
+      "path": "data/knowledge/jujutsu-v4-case/经验候选.json",
+      "sha256": "e22cefd870e93a35e411eac4532728a2ba22a90dc6c473cc2bf27d7a7cf07646",
+      "bytes": 13880
+    },
+    {
+      "path": "data/knowledge/migration-entrypoint-case/evidence/SUMMARY.json",
+      "sha256": "42286e749a78e9ab2b147eaf9f16422f6f1725043810e0944f9810074f1a3c65",
+      "bytes": 439
+    },
+    {
+      "path": "data/knowledge/migration-entrypoint-case/EVIDENCE_MAP.json",
+      "sha256": "73dfac76f67427532dd0129046265acbe6aa3f410db66045f291d7ac13fa6411",
+      "bytes": 234
+    },
+    {
+      "path": "data/knowledge/migration-entrypoint-case/经验候选.json",
+      "sha256": "00f65444215ae678172a5f2893438b00406ef991b8e792f7f1aca36494d08fae",
+      "bytes": 7009
+    },
+    {
+      "path": "data/knowledge/migration-entrypoint-case/说明.md",
+      "sha256": "3626e5a8ebaef0cc7bc1d10e64db64bf242457749ad5f4389e9469c00eae340b",
+      "bytes": 418
+    },
+    {
+      "path": "data/machine.example.json",
+      "sha256": "60640c880e050e78eb7474dbdf29a0baf95bd17a37a60880f5aa011fad0074b3",
+      "bytes": 572
+    },
+    {
+      "path": "data/user-profile.json",
+      "sha256": "a9596c5f8b461daa30808c2205966c9aa282bdbd2c684c28b533c0853a8430d8",
+      "bytes": 4186
+    },
+    {
+      "path": "examples/越过高塔/evidence/PROVENANCE.json",
+      "sha256": "8e2bb80f177e31c4fc137605a589c437ef291535d00dbe26e499dcf532c3b020",
+      "bytes": 4183
+    },
+    {
+      "path": "examples/越过高塔/evidence/V3创作质量_独立批评.txt",
+      "sha256": "b1bda20d5a105134f60f2d64c1a388fe9f827c033d544224c087c6f40f411b33",
+      "bytes": 353
+    },
+    {
+      "path": "examples/越过高塔/evidence/V4_A24延长尾音新候选.json",
+      "sha256": "54d140c647dd292ff77fd386c84f3064e34c5bf61f2ddf971c06b6b1b79c8d24",
+      "bytes": 502
+    },
+    {
+      "path": "examples/越过高塔/evidence/V4交付修正01_歌词与版式实像复核.txt",
+      "sha256": "3418f042d341c341f0bc4763c3057093eb07fc401ce237e611ed945362cbd251",
+      "bytes": 328
+    },
+    {
+      "path": "examples/越过高塔/evidence/V4交付版_A24与停止线复核.txt",
+      "sha256": "9d7e468cf3162b8ae2f5b1618b21b028a0344aaa365a3ca37c078ddc1d86b0aa",
+      "bytes": 328
+    },
+    {
+      "path": "examples/越过高塔/evidence/V4原生保存文件_明文读取能力只读.json",
+      "sha256": "6e6cd4c35934c816f37c37a0001b29bcda50c5879da535145a557456a69a681b",
+      "bytes": 514
+    },
+    {
+      "path": "examples/越过高塔/evidence/V4原生终版完整备份.json",
+      "sha256": "2f1bf8a0568bc2e5302135fdcdc7fd4293efc9aa14f6a39671c9dc93cadb9905",
+      "bytes": 501
+    },
+    {
+      "path": "examples/越过高塔/evidence/V4审片01_前景交接独立复核.txt",
+      "sha256": "21f263914df8dc8bf2e74d8a697bb924b346576ffb8b3a55fbedefda25b7807f",
+      "bytes": 328
+    },
+    {
+      "path": "examples/越过高塔/evidence/V4新素材_边界与唯一性复核.txt",
+      "sha256": "958cc297e581802f15eba46d976c219763b6b7213d664ffdffd0f2387830db19",
+      "bytes": 325
+    },
+    {
+      "path": "examples/越过高塔/evidence/V4本轮原生修改与交付记录.json",
+      "sha256": "0b048343ce2248ba5556e8d69d363a283f941208c600d5c35a1117fb61a8d919",
+      "bytes": 522
+    },
+    {
+      "path": "examples/越过高塔/evidence/V4终版_前景交接一致性复核.txt",
+      "sha256": "f41bfdb671072a111b18728588596d0e171b8cb73c7349c38001f8a8aa2801c2",
+      "bytes": 304
+    },
+    {
+      "path": "examples/越过高塔/evidence/V4终版导出_解码与响度检查.json",
+      "sha256": "a8d04679b7066cd981c696e5b12af8cdde22f12308cad0e7da5898a7076bb472",
+      "bytes": 488
+    },
+    {
+      "path": "examples/越过高塔/evidence/中文漫剪参考核验.txt",
+      "sha256": "542062dd70eed39ff3ac602ae617ac581baa3f7874355d3f494fb516b43b2c47",
+      "bytes": 371
+    },
+    {
+      "path": "examples/越过高塔/evidence/剪映11.3自由层级核验.txt",
+      "sha256": "69bd4c1a17d8723612c5fa56d3c911050ec8b0d747964f100b54feb69b0acaee",
+      "bytes": 316
+    },
+    {
+      "path": "examples/越过高塔/evidence/剪映11.3蒙版结构核验.txt",
+      "sha256": "780be1bcd1be597a5bcb43e0ed5500f5bfd114dfff1419ec091a51f99342916b",
+      "bytes": 346
+    },
+    {
+      "path": "examples/越过高塔/evidence/重复镜头替换建议.json",
+      "sha256": "0b9debf6464b355ffa27e450b5e06943268872e006e41518f451847f7c4b549f",
+      "bytes": 518
+    },
+    {
+      "path": "examples/越过高塔/复盘.md",
+      "sha256": "3081acda2bb6cf53b613ca57e3fa055c932f8a37124ce6c01ef3bc5516abd3d7",
+      "bytes": 16688
+    },
+    {
+      "path": "examples/越过高塔/经验候选.json",
+      "sha256": "e22cefd870e93a35e411eac4532728a2ba22a90dc6c473cc2bf27d7a7cf07646",
+      "bytes": 13880
+    },
+    {
+      "path": "README.md",
+      "sha256": "fdee9df1ab4bbf4f6c5803f648372b9e921fe1e4df50f618d6e16f2dc284f007",
+      "bytes": 2981
+    },
+    {
+      "path": "skills/jianying-amv-workflow/agents/openai.yaml",
+      "sha256": "774ddfeca76b10828b2fd1d932e007fc27e6406439788b5e25782e3d0c41fa84",
+      "bytes": 343
+    },
+    {
+      "path": "skills/jianying-amv-workflow/references/creative-editing.md",
+      "sha256": "6c23a4d445c1e2b5a1c247cf9edd158a806f5ea205046f2a3757d64e169a64f6",
+      "bytes": 3592
+    },
+    {
+      "path": "skills/jianying-amv-workflow/references/native-editing.md",
+      "sha256": "fb89a5a3a49f34d557c4b4bacbafe9189b687c9c8701161735021c707f59467f",
+      "bytes": 3184
+    },
+    {
+      "path": "skills/jianying-amv-workflow/references/project-contract.md",
+      "sha256": "2e7c923dba2d7c8586a78da58bcc296aba3022fde1312be4b8de7e142653c2d2",
+      "bytes": 5656
+    },
+    {
+      "path": "skills/jianying-amv-workflow/references/runtime-and-authority.md",
+      "sha256": "630fa83a7a34dbb779615da93d8f261289d56a7ae3863a95fdcc4db08e9bea07",
+      "bytes": 2770
+    },
+    {
+      "path": "skills/jianying-amv-workflow/SKILL.md",
+      "sha256": "e13ce941b5eb168e5286454587770357e431c492f87d891411d35b3add1c4810",
+      "bytes": 3294
+    },
+    {
+      "path": "skills/video-media-review/agents/openai.yaml",
+      "sha256": "7aad9683cfb27ba33756d19ab4fc39119816d01eeab6acba944cc90485399ed0",
+      "bytes": 366
+    },
+    {
+      "path": "skills/video-media-review/references/export-review.md",
+      "sha256": "1b54f1b4c3c05745a6aedd7bd1819e833798336c197520df1106647ca61df3c5",
+      "bytes": 3279
+    },
+    {
+      "path": "skills/video-media-review/references/handover.md",
+      "sha256": "a365e08071ae13401c63a37f1476eea27d8705b4aa14116864ea71d4ac752277",
+      "bytes": 1996
+    },
+    {
+      "path": "skills/video-media-review/SKILL.md",
+      "sha256": "c49b9bf4a1c99d1e43a23b7ffa4265e7dd378a011405e900787e3b128f3e1d33",
+      "bytes": 1623
+    },
+    {
+      "path": "skills/video-workflow-learning/agents/openai.yaml",
+      "sha256": "2fb8ab03bd5e793ec64c94235fa288dc16bd015379fd924244d0b11c5df9be35",
+      "bytes": 374
+    },
+    {
+      "path": "skills/video-workflow-learning/references/learning-proposal.md",
+      "sha256": "c2a1155e1b98a13389e1578a616c4debb81d26023a8c075c1ce5876a2cb2643e",
+      "bytes": 2093
+    },
+    {
+      "path": "skills/video-workflow-learning/SKILL.md",
+      "sha256": "8182035f296e4705193990602c26973b11a67a7c8ff4dbc4f38b84becad05c46",
+      "bytes": 1253
+    },
+    {
+      "path": "templates/project/AGENTS.md",
+      "sha256": "0c9839ddd10f1a8aef0d84aa59ccb7c8ffcb4a94a043e2ec6b734be77baaab03",
+      "bytes": 1723
+    },
+    {
+      "path": "templates/project/assets/MEDIA_MANIFEST.json",
+      "sha256": "34d068b2529be785edfa0db607a81787f75182feddbc286cfc682878d9a7d678",
+      "bytes": 116
+    },
+    {
+      "path": "templates/project/design/EDIT_PLAN.json",
+      "sha256": "ee602f16b951804d5602ae2bdb8f02148b6b97646b9119d7b1b7750877f374d1",
+      "bytes": 377
+    },
+    {
+      "path": "templates/project/PROJECT_STATE.json",
+      "sha256": "4bde9fe0514499305e6dac069c5a9b705a67c5e511c95c89dc9f222b8a1955d2",
+      "bytes": 1126
+    },
+    {
+      "path": "tests/test_video_workflow.py",
+      "sha256": "c17e21a47ff0d334d5c16a12ce3c2bc906c13ce175dd0d7a6adb0964c2f8b2c8",
+      "bytes": 22430
+    },
+    {
+      "path": "toolkit/music_analysis.py",
+      "sha256": "523034ecdde6bfc204bba35c5cfe8965980bb5a521a72212ee8431d6aeab5641",
+      "bytes": 5548
+    },
+    {
+      "path": "toolkit/video_workflow.py",
+      "sha256": "f3ddcd43858bef5b734153ffecebd0fd4d9b851669e8748b522bf510295a169a",
+      "bytes": 59360
+    },
+    {
+      "path": "verification/check_discovery.py",
+      "sha256": "80bd0e7aa2ea845219473b23aa8b3a5927c6f319a3e5a0d0c1813df487b19830",
+      "bytes": 3531
+    },
+    {
+      "path": "verification/PUBLIC_COPY_VALIDATION.json",
+      "sha256": "baed75bcf955ec1e4a691306c407fe204860f7e07acd86df5bc6083106fa0625",
+      "bytes": 885
+    },
+    {
+      "path": "verification/test_install_and_music.py",
+      "sha256": "21a30386cd975c1e52d73bada9b48a41eefde69523223881a192709960325cf9",
+      "bytes": 3995
+    },
+    {
+      "path": "verification/VALIDATION_SUMMARY.json",
+      "sha256": "5691b7f5ebedde3ef1a3e06c71c650e895b3b93ae22d35073b427787e46e5244",
+      "bytes": 573
+    },
+    {
+      "path": "安装与初始化.py",
+      "sha256": "35349b0537fc0e4b28a58493eea28d78d4104185d49ff746b58ed11ba46e4749",
+      "bytes": 7279
+    },
+    {
+      "path": "开始使用.md",
+      "sha256": "b7353d41d26a441065f092d865f407b18d10e4f013548c7e389303d0fab8fd5f",
+      "bytes": 4514
+    },
+    {
+      "path": "手册/Agent实操.md",
+      "sha256": "24ee60ab5b3631e80042e413ce455a3de5af3f357e51f099b5396addb271414d",
+      "bytes": 8413
+    },
+    {
+      "path": "手册/接手与迁移.md",
+      "sha256": "85e92cdc8ee15ec36c2c8750f5bfb2692ea4afc87d8144c9b11803681b1002df",
+      "bytes": 6407
+    },
+    {
+      "path": "手册/故障与证据.md",
+      "sha256": "ecc66933093b32e64a68cc5c40df23a91ca2f2beae7884d2b2e0f06cb477c167",
+      "bytes": 6219
+    },
+    {
+      "path": "手册/用户入门.md",
+      "sha256": "8c75b92a17ddcf8c744df087068426c2f11d8a6140662433db6762fa757df695",
+      "bytes": 5268
+    },
+    {
+      "path": "手册/规则与经验升级.md",
+      "sha256": "47c80083b68a17e9ab8bc8fcc8d35c10df16e5b816efb527baacc418a3932897",
+      "bytes": 4074
+    },
+    {
+      "path": "验收报告.md",
+      "sha256": "39eaddda914325b7548caa68eeffe40cba9c348d7f609c7c4efe6b6aab24281c",
+      "bytes": 1305
+    }
+  ],
+  "excludes_self": true
+}

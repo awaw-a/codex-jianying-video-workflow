@@ -1,0 +1,6 @@
+interface:
+  display_name: "视频独立审查"
+  short_description: "审查实际素材与导出，定位边界、字幕、抠像和声音问题并保留可追溯证据"
+  default_prompt: "使用 $video-media-review 独立审查当前视频导出，报告有时间定位的问题和未验证的限制，不修改工程。"
+policy:
+  allow_implicit_invocation: true

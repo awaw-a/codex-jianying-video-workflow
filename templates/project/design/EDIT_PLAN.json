@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "project_id": null,
+  "plan_id": null,
+  "plan_status": "draft",
+  "authority": "design_reference",
+  "constraints_revision": 1,
+  "frozen_against_native_artifact_id": null,
+  "shots": [],
+  "overlays": [],
+  "subtitle_lines": [],
+  "original_audio_events": [],
+  "music_cuts": [],
+  "font_asset_ids": [],
+  "declared_reuse": [],
+  "notes": []
+}

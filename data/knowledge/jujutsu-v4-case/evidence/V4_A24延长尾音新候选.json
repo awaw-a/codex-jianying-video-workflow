@@ -1,0 +1,7 @@
+{
+  "record_role": "publication_summary_not_original_review",
+  "original_report_name": "V4_A24延长尾音新候选.json",
+  "original_report_sha256": "4f3e8bc68bd8f467cbc36d5bdac8cc2789a58fea184664bcf91e5a8a4f30f639",
+  "summary": "利用字幕、ASR与波形辅助寻找更完整的台词尾音候选；候选生成当时不代表已进入原生工程，也不代表耳听通过。",
+  "scope_limit": "历史摘要；未在公开副本重新进行实像或听审。原始证据仅保留本地。"
+}

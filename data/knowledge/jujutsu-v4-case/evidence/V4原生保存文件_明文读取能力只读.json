@@ -1,0 +1,7 @@
+{
+  "record_role": "publication_summary_not_original_review",
+  "original_report_name": "V4原生保存文件_明文读取能力只读.json",
+  "original_report_sha256": "a152c20cdc2e320f13c36d0dd92085166532f98569b295116e74177807aac3c8",
+  "summary": "最新保存的原生内容加密，旧明文信息陈旧；仅凭旧JSON不能恢复UI后的真实编辑状态，须保留完整原生目录。",
+  "scope_limit": "历史摘要；未在公开副本重新进行实像或听审。原始证据仅保留本地。"
+}

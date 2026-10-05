@@ -1,0 +1,10 @@
+{
+  "record_role": "public_summary_map_not_original_artifacts",
+  "local_source_records_not_published": true,
+  "files": [
+    {
+      "archived_relative_path": "evidence/SUMMARY.json",
+      "role": "publication_summary"
+    }
+  ]
+}

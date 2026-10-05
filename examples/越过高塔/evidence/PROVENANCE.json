@@ -1,0 +1,81 @@
+{
+  "record_role": "public_summary_provenance",
+  "original_media_and_private_paths_published": false,
+  "reports": [
+    {
+      "name": "剪映11.3蒙版结构核验.txt",
+      "original_report_sha256": "fe1554d0dd7f10937fb9ba307abdd78d2e398cb2e3083447d3525bc3a72fd18f",
+      "publication_summary_sha256": "780be1bcd1be597a5bcb43e0ed5500f5bfd114dfff1419ec091a51f99342916b"
+    },
+    {
+      "name": "剪映11.3自由层级核验.txt",
+      "original_report_sha256": "c87ecfb24cd9f6dce4f0825cf729da07ca39ce2692cd002c21a374ec74f1673a",
+      "publication_summary_sha256": "69bd4c1a17d8723612c5fa56d3c911050ec8b0d747964f100b54feb69b0acaee"
+    },
+    {
+      "name": "重复镜头替换建议.json",
+      "original_report_sha256": "2ebbe1babfb0c79a2785cd4524e86e83e7dcd755270249bbc84fb094b0a9c4f3",
+      "publication_summary_sha256": "0b9debf6464b355ffa27e450b5e06943268872e006e41518f451847f7c4b549f"
+    },
+    {
+      "name": "V4新素材_边界与唯一性复核.txt",
+      "original_report_sha256": "7b9d29ed34913d8e4b04c30aeb3d4c4f07b813bdd76cbe2d5e83fe256a73a638",
+      "publication_summary_sha256": "958cc297e581802f15eba46d976c219763b6b7213d664ffdffd0f2387830db19"
+    },
+    {
+      "name": "V3创作质量_独立批评.txt",
+      "original_report_sha256": "aaa32b651658f48ed332aa5bbe98472704718bb3f1d375eef1aa2d53e38d6045",
+      "publication_summary_sha256": "b1bda20d5a105134f60f2d64c1a388fe9f827c033d544224c087c6f40f411b33"
+    },
+    {
+      "name": "V4审片01_前景交接独立复核.txt",
+      "original_report_sha256": "c8c9120b0ec8e2a46b49afd51b137183e84a671964eadb0ed26b63a3e3e004c1",
+      "publication_summary_sha256": "21f263914df8dc8bf2e74d8a697bb924b346576ffb8b3a55fbedefda25b7807f"
+    },
+    {
+      "name": "V4交付修正01_歌词与版式实像复核.txt",
+      "original_report_sha256": "6d5d6f50bce7aade6799b859bfc2c13785117696060558bd5528ce5a180c9792",
+      "publication_summary_sha256": "3418f042d341c341f0bc4763c3057093eb07fc401ce237e611ed945362cbd251"
+    },
+    {
+      "name": "V4_A24延长尾音新候选.json",
+      "original_report_sha256": "4f3e8bc68bd8f467cbc36d5bdac8cc2789a58fea184664bcf91e5a8a4f30f639",
+      "publication_summary_sha256": "54d140c647dd292ff77fd386c84f3064e34c5bf61f2ddf971c06b6b1b79c8d24"
+    },
+    {
+      "name": "V4交付版_A24与停止线复核.txt",
+      "original_report_sha256": "88d10a7bd1c881317412cefe79c63e0b0246f6b939cec2c561b3c44ab7dcb33a",
+      "publication_summary_sha256": "9d7e468cf3162b8ae2f5b1618b21b028a0344aaa365a3ca37c078ddc1d86b0aa"
+    },
+    {
+      "name": "V4原生保存文件_明文读取能力只读.json",
+      "original_report_sha256": "a152c20cdc2e320f13c36d0dd92085166532f98569b295116e74177807aac3c8",
+      "publication_summary_sha256": "6e6cd4c35934c816f37c37a0001b29bcda50c5879da535145a557456a69a681b"
+    },
+    {
+      "name": "V4原生终版完整备份.json",
+      "original_report_sha256": "174a80d530c156d2c1d3b41a86918b17a705b4898dffcbf3dc1077caa7c5e1b6",
+      "publication_summary_sha256": "2f1bf8a0568bc2e5302135fdcdc7fd4293efc9aa14f6a39671c9dc93cadb9905"
+    },
+    {
+      "name": "V4本轮原生修改与交付记录.json",
+      "original_report_sha256": "01088f22a522557619c2bdb8d5946fac1a2481284dfbe06aff4337855d03fb61",
+      "publication_summary_sha256": "0b048343ce2248ba5556e8d69d363a283f941208c600d5c35a1117fb61a8d919"
+    },
+    {
+      "name": "V4终版导出_解码与响度检查.json",
+      "original_report_sha256": "36d99da37699ad205725750ff2a9b4d8f959aaaec6d7eaac0f13d9b59caa399b",
+      "publication_summary_sha256": "a8d04679b7066cd981c696e5b12af8cdde22f12308cad0e7da5898a7076bb472"
+    },
+    {
+      "name": "V4终版_前景交接一致性复核.txt",
+      "original_report_sha256": "ea29769a6dc8e3e4142284f4f67fa03b352418952387bee514f67441bf224204",
+      "publication_summary_sha256": "f41bfdb671072a111b18728588596d0e171b8cb73c7349c38001f8a8aa2801c2"
+    },
+    {
+      "name": "中文漫剪参考核验.txt",
+      "original_report_sha256": "f09eb183479541496c342f3c71ed00269c0c947af9095253f533f9ff929fa24c",
+      "publication_summary_sha256": "542062dd70eed39ff3ac602ae617ac581baa3f7874355d3f494fb516b43b2c47"
+    }
+  ]
+}

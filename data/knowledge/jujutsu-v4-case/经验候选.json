@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "case_id": "jujutsu_ivory_tower_yueguogaota",
+  "case_version": "V4_空间歌词与交接_2705f",
+  "record_type": "evidence_grounded_learning_candidates",
+  "authority_note": "本文件不是个人profile，不自动执行规则修改。当前已批准的偏好以data/user-profile.json为准。已有规则覆盖时应改善执行或验证，避免重复新增。",
+  "current_limits": [
+    "H02腿间隙和前置段仍有微小蓝边，不声称原生抠像完美",
+    "没有真实耳听；歌词低置信词、混音和尾音仍待用户听审",
+    "跨电脑与技能发现验证级别以包验收报告为准",
+    "当前D盘原生内容指纹与历史已验证快照不同；当前native/export关系未验证，不由加密字节差异推断画面改变",
+    "随包报告内部分大图和媒体引用仍为外部历史路径"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "YGT-L01",
+      "classification": "implementation_defect",
+      "trigger": "第三季素材S3_29与电影0的B032蓄能画面相似",
+      "user_intent": "无意重复画面必须替换；当前允许明确设计的有意重放",
+      "finding": "原源确为跨母版回忆重放，路径和集数不同不能证明画面唯一；所用区间还含内部机位切换",
+      "root_cause": "仅检查源路径和时间交叠，不足以发现动画本身复用",
+      "correction": "当时V067替换为唯一S3_03，V4又按新交接设计改为Y02",
+      "evidence": [
+        "evidence/重复镜头替换建议.json",
+        "evidence/V4新素材_边界与唯一性复核.txt"
+      ],
+      "proposed_check": "使用台账交叠检查后，增加跨母版相似候选，并对候选原源目视；有意重放先声明目的与目标区间",
+      "scope": "存在多集、回忆或多母版的素材池；相似检索不是自动判定",
+      "suggested_location": "video-media-review检查动作与toolkit候选报告",
+      "existing_coverage": "个人profile和当前审查skill已有唯一性及有意重放边界",
+      "promotion_status": "recorded; no_new_long_term_change_approved",
+      "user_decision": null
+    },
+    {
+      "candidate_id": "YGT-L02",
+      "classification": "implementation_defect",
+      "trigger": "为了延长出框保持，拟扩B006与S3_09",
+      "user_intent": "镜头末尾不能无意切到其他场景",
+      "finding": "B006可用人物角度仅约12帧；S3_09拟扩范围跨硬切",
+      "root_cause": "旧安全窗被当作整个代理都安全，扩段后没有重新全帧核对",
+      "correction": "新取T01与M01完整单镜，全原源和代理帧目检，保留EDL零交叠",
+      "evidence": [
+        "evidence/V4新素材_边界与唯一性复核.txt"
+      ],
+      "proposed_check": "每次扩源入出必须重新验证使用全范围和余量，编码末帧独立核查，旧边界通过不继承给扩段",
+      "scope": "扩镜或改代理的项目；不以固定余量秒数代替实际边界",
+      "suggested_location": "video-media-review素材边界与证据失效规则",
+      "existing_coverage": "当前skill要求全使用区间及上下文审查",
+      "promotion_status": "recorded; no_new_long_term_change_approved",
+      "user_decision": null
+    },
+    {
+      "candidate_id": "YGT-L03",
+      "classification": "environment_difference",
+      "trigger": "旧masks参数写入但原生忽略，视频前景也不能遮字",
+      "user_intent": "真实可编辑蒙版与人物遮字",
+      "finding": "common_mask及widthKF特定组合本机实测可见；自由层级双开关和segment track_render_index组合使前景挡字",
+      "root_cause": "库导出字段与本机原生行为不同；写入成功被误当可见成功",
+      "correction": "代表小样验证后再装配；记录参数组合、版本与实际画面",
+      "evidence": [
+        "evidence/剪映11.3蒙版结构核验.txt",
+        "evidence/剪映11.3自由层级核验.txt"
+      ],
+      "proposed_check": "每个未验证的原生能力先做微型小样，包含非零入点、所需变速及真实层级",
+      "scope": "当前版本和资源组合；不承诺各字段独立必需或跨版本通用",
+      "suggested_location": "制作skill版本操作库",
+      "existing_coverage": "当前native-editing reference已规定小样与实际导出验证",
+      "promotion_status": "recorded; version_example_only",
+      "user_decision": null
+    },
+    {
+      "candidate_id": "YGT-L04",
+      "classification": "implementation_defect",
+      "trigger": "蒙版初始值看似全幅或不在目标窗口变化",
+      "user_intent": "效果准确卡点，前景底图同位",
+      "finding": "视频与音频关键帧需source_start加局部目标偏移乘speed；连续变速不能用平均值；中心偏移后full值也可能露边",
+      "root_cause": "目标时钟与源时钟混淆，并把1.0宽高当作所有构图全幅",
+      "correction": "源时钟映射、连续子段对接和实际展开端帧检查",
+      "evidence": [
+        "evidence/剪映11.3蒙版结构核验.txt",
+        "evidence/V4终版_前景交接一致性复核.txt"
+      ],
+      "proposed_check": "字段明确时钟与单位；通过非零源入点/非1倍速度小样和端帧检查验证映射",
+      "scope": "以源时钟保存的原生对象；字幕等无source_timerange对象另验",
+      "suggested_location": "toolkit map-clock与版本操作库",
+      "existing_coverage": "当前统一工具提供时钟转换，skill已有源时钟要求",
+      "promotion_status": "recorded; no_new_long_term_change_approved",
+      "user_decision": null
+    },
+    {
+      "candidate_id": "YGT-L05",
+      "classification": "refined_user_requirement",
+      "trigger": "用户要求弃手工抠像、出框停留更久与明确人物交接顺序",
+      "user_intent": "先换背景保留旧人物，等新人物出现再退旧人物并展开",
+      "finding": "V3短几何窗语汇相似；原生候选有空抠像或粘背景；V4更换清楚单人镜头、原生修补并完成三阶段交接",
+      "root_cause": "短开合不等于可感知空间关系；困难镜头不适合强行抠像",
+      "correction": "连续独占安全源延长；新旧fore分轨；按阶段逐帧检查；手工mov弃装配",
+      "evidence": [
+        "evidence/V3创作质量_独立批评.txt",
+        "evidence/V4审片01_前景交接独立复核.txt",
+        "evidence/V4终版_前景交接一致性复核.txt"
+      ],
+      "proposed_check": "在角色清楚度与动作动机成立后设计保持段和交接五阶段；全窗检查边缘而非只首尾",
+      "scope": "空间出框设计；1至1.5秒只为本案例，H02蓝边仍待如实记录",
+      "suggested_location": "creative-editing与native-editing参考案例",
+      "existing_coverage": "原生抠像和交接顺序已是用户批准profile，不再重复提案",
+      "promotion_status": "recorded_confirmed_preference; parameter_examples_not_global",
+      "user_decision": "当前偏好已批准；没有批准固定时长或固定抠像数量"
+    },
+    {
+      "candidate_id": "YGT-L06",
+      "classification": "implementation_defect",
+      "trigger": "空间歌词遮挡导致关键部分难读，白闪背景描边不足",
+      "user_intent": "复杂好看的歌词且意义可读，不挡关键动作",
+      "finding": "L06/L23/L28分层段需要一致位置；审片01隐藏重要部分；修正版九段连续、后文恢复、亮底暗描边可见",
+      "root_cause": "检查了遮字是否成立，但没有同等检查关键字和整句层级",
+      "correction": "原生UI统一九段位置与描边，实际导出220相关帧及亮底样本复核",
+      "evidence": [
+        "evidence/V4交付修正01_歌词与版式实像复核.txt",
+        "evidence/V4本轮原生修改与交付记录.json"
+      ],
+      "proposed_check": "按before/SPACE/after检查一致性，关键字、脸、接触点、标点和亮底分别验",
+      "scope": "所有空间字幕；具体位置与5号描边非通用数值；识别词义仍需耳听",
+      "suggested_location": "video-media-review字幕检查动作",
+      "existing_coverage": "当前profile保护关键词脸和接触点，当前review已要求实际版式检查",
+      "promotion_status": "recorded; no_new_long_term_change_approved",
+      "user_decision": null
+    },
+    {
+      "candidate_id": "YGT-L07",
+      "classification": "implementation_defect",
+      "trigger": "A24旧尾18.79早于ASS18.87，Y02对白跨视频末点",
+      "user_intent": "完整领域音节和自然尾音，不截半词",
+      "finding": "字幕/ASR/波形给出不同边界；原声可延续同一术式的相机切换，但视频安全范围仍需独立保持",
+      "root_cause": "把音频长度等同所选视频安全镜头或仅按一个辅助边界判断",
+      "correction": "A24另存15.99至18.99新衍生，保留旧文件，经UI替换延长；Y02不装配越界对白",
+      "evidence": [
+        "evidence/V4_A24延长尾音新候选.json",
+        "evidence/V4交付版_A24与停止线复核.txt",
+        "evidence/V4新素材_边界与唯一性复核.txt"
+      ],
+      "proposed_check": "台词/音效独立完整区间与前后余量，辅助证据交叉核对后实际试听；候选与native应用状态分开",
+      "scope": "原声选择；120ms仅案例余量，不作为全部台词固定值",
+      "suggested_location": "creative-editing原声选择及review听审门槛",
+      "existing_coverage": "当前profile已有完整边界和真实听审要求",
+      "promotion_status": "recorded; listening_pending",
+      "user_decision": null
+    },
+    {
+      "candidate_id": "YGT-L08",
+      "classification": "workflow_failure_risk",
+      "trigger": "最新原生草稿加密，而可读draft_info为初始状态",
+      "user_intent": "保留全部原生抠像与人工可编辑结果",
+      "finding": "旧prepared不含最新原生13组处理；完整备份为2833文件，matting2743文件；原生UI修订后保存关闭重开",
+      "root_cause": "把可读文件当权威，或把单个draft JSON当完整备份",
+      "correction": "不覆盖主草稿、不绕过加密；先完整备份，再UI定点修改；保存重开和备份清单分别记录",
+      "evidence": [
+        "evidence/V4原生保存文件_明文读取能力只读.json",
+        "evidence/V4原生终版完整备份.json",
+        "evidence/V4本轮原生修改与交付记录.json"
+      ],
+      "proposed_check": "修改入口先核对权威原生保存内容与可恢复快照，历史生成器默认拒绝已有目标；迁移另做重开/导出验证",
+      "scope": "原生保存后的工程；初始化新工程仍可文件装配",
+      "suggested_location": "runtime-and-authority、handover与工具无覆盖保护",
+      "existing_coverage": "当前包已获授权加入原生权威、单写入者和完整备份机制",
+      "promotion_status": "recorded; no_new_long_term_change_approved",
+      "user_decision": null
+    },
+    {
+      "candidate_id": "YGT-L09",
+      "classification": "creative_choice_and_validation_limit",
+      "trigger": "原尾段画面仍动而音乐天然余响已很弱",
+      "user_intent": "音乐和画面一起结束，没有无意义尾段",
+      "finding": "改2705帧后末12帧连续；AAC多17ms低能尾不能直接当新歌曲或时间线错位",
+      "root_cause": "设计停止感与编码结束不是同一概念",
+      "correction": "原生裁到2705，视觉末帧和真实PCM分开核对",
+      "evidence": [
+        "evidence/V4交付版_A24与停止线复核.txt",
+        "evidence/V4终版导出_解码与响度检查.json"
+      ],
+      "proposed_check": "以当前项目停止点审实际末帧、所有音轨、编码尾和真实听感，不只用容器duration",
+      "scope": "有明确乐句终点的作品；2705帧和低能阈值不作为通用规格",
+      "suggested_location": "review停止点与交付检查",
+      "existing_coverage": "当前profile已有end_with_music，review区分数值与耳听",
+      "promotion_status": "recorded; listening_pending",
+      "user_decision": null
+    },
+    {
+      "candidate_id": "YGT-L10",
+      "classification": "workflow_failure_risk",
+      "trigger": "历史设计生成器仍包含Rika旧方案，后续G03与SPACE已人工补丁",
+      "user_intent": "接手当前真实工程，避免失去最新改动",
+      "finding": "重跑无条件写入的历史脚本可能把新设计恢复成旧方案；审核脚本也曾直接回写EDL状态",
+      "root_cause": "执行入口和权威数据没有统一，生成与审查副作用未隔离",
+      "correction": "历史生成器仅保留作说明；统一工具只读报告或新输出目录；状态由主agent单写",
+      "evidence": [
+        "evidence/V4原生保存文件_明文读取能力只读.json",
+        "evidence/V4本轮原生修改与交付记录.json"
+      ],
+      "additional_source_note": "历史脚本tools/v4_transition_design.py、audit_bound_edl_media.py仅在原工作区；本包不要求运行它们",
+      "proposed_check": "接手只从AGENTS和单一状态找入口，生成器声明新建/拒绝覆盖；审查函数无主工程副作用；旧脚本标历史",
+      "scope": "有生成脚本和原生修改并存的长期项目",
+      "suggested_location": "项目契约、toolkit输出策略、接手手册",
+      "existing_coverage": "当前已批准包包含单状态和单写入者；新增升级仍需确认",
+      "promotion_status": "recorded; no_new_long_term_change_approved",
+      "user_decision": null
+    }
+  ],
+  "publication_note": "脱敏经验记录；公开证据为摘要，原始媒体/工程/逐帧资料不随仓库发布；未经目标用户确认不升级为规则。"
+}

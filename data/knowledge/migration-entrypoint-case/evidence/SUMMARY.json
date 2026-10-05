@@ -1,0 +1,19 @@
+{
+  "record_role": "publication_summary",
+  "v1": {
+    "AGENTS_present": false,
+    "tool_reference_relocated": false
+  },
+  "v2": {
+    "AGENTS_present": true,
+    "tool_reference_relocated": true,
+    "state_and_handoff_commands_passed": true
+  },
+  "file_layer_validation": {
+    "files": 5832,
+    "mismatches": 0
+  },
+  "native_gui_migration_verified": false,
+  "second_computer_tested": false,
+  "human_listening_verified": false
+}

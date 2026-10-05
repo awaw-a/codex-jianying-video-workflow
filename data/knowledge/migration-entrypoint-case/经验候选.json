@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "case_id": "jujutsu_ivory_tower_yueguogaota",
+  "case_version": "workflow_package_1.0.0_relocation_v1_to_v2",
+  "record_type": "evidence_grounded_learning_candidates",
+  "authority_note": "仅为本轮已授权打包修复的窄范围经验记录；不是第二份profile，不自动提升为长期规则。沿用既有经验候选结构；不改旧候选或INDEX。",
+  "loaded_skill": {
+    "path": "<LOCAL_ONLY>/SKILL.md",
+    "sha256": "8182035f296e4705193990602c26973b11a67a7c8ff4dbc4f38b84becad05c46",
+    "reference_path": "<LOCAL_ONLY>/learning-proposal.md",
+    "reference_sha256": "c2a1155e1b98a13389e1578a616c4debb81d26023a8c075c1ce5876a2cb2643e",
+    "application": "实际安装版本由本协作者读取并应用，按其引用完成一条可追溯候选；不是仅比较源包措辞。"
+  },
+  "current_limits": [
+    "仅验证迁移文件包中的入口、工具路径和修复后既有检查证据；没有新增原生UI、重连、导出、听审或完整媒体检查。",
+    "当前原生与已知导出的对应关系未复验，项目维持review；打包入口修复通过不能提升视频为正式定稿。",
+    "同机路径迁移通过不证明第二台电脑的Python、剪映、字体、缓存或原生加密内容可用。"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "YGT-L11-PACK-ENTRYPOINT",
+      "classification": "implementation_defect",
+      "classification_reason": "已有项目入口与随包工具要求在打包实现中遗漏；不是用户后来增加的新需求。路径布局变化是触发环境，不把缺失降格为创作取舍。",
+      "trigger": "将同一项目从原示例目录打成越过高塔_v1迁移副本，脱离原目录后按中央状态加载工具。",
+      "user_intent": "包可在跨电脑接手时找到唯一状态、项目约束和统一工具；本轮只实施工作流、复盘与验证，工程及视频只读。",
+      "finding": "v1缺AGENTS.md，并保留旧布局的../../toolkit/video_workflow.py。该相对路径迁移后解析到包外缺失文件；复验借助本机已安装工具回退。因此原机器有全局工具时能掩盖迁移入口缺陷。",
+      "root_cause": "打包清单未包含项目AGENTS与运行工具，迁移状态未将workflow_toolkit_path改成新包布局。v1缺项可直接重现，v2实现和文件检查支持此因果范围。",
+      "correction": "在已获用户批准的打包修复范围内，pack-project加入AGENTS.md、workflow_toolkit/video_workflow.py及存在时的music_analysis.py，迁移状态改为包内相对工具路径，并保留约束快照；输出新v2而不覆盖冻结v1。",
+      "evidence": [
+        {
+          "stage": "before",
+          "path": "<LOCAL_ONLY>/v1-read-only-retest.json",
+          "sha256": "39a20373953a9ee6ba001af6cc0780e9b1875c5e4f0bdbb6932421ae6453e858",
+          "supports": "remaining_v1_handoff_gaps明确记录缺AGENTS与工具路径缺失、使用安装回退；报告保留review及未听审/未跨机限制。"
+        },
+        {
+          "stage": "direct_v1_read_only_reproduction",
+          "path": "<LOCAL_ONLY>/PROJECT_STATE.json",
+          "sha256": "f73b48e09ca976f90231d9048f079237d02ff64cea8c20053894c507e4f06849",
+          "workflow_toolkit_path": "../../toolkit/video_workflow.py",
+          "resolved_toolkit_path": "<LOCAL_ONLY>/video_workflow.py",
+          "AGENTS_present": false,
+          "toolkit_exists": false
+        },
+        {
+          "stage": "after",
+          "path": "<LOCAL_ONLY>/FINAL_VALIDATION_v2.json",
+          "sha256": "17eec244b9af6041a9f7b7fa0038957c41b1007017442bec96b9cc528f0e4d70",
+          "supports": "migration.AGENTS_present与toolkit_resolves_in_package均为true；relocated-case-state及toolkit-tests退出0；5832项文件指纹检查无mismatch。"
+        },
+        {
+          "stage": "direct_v2_read_only_confirmation",
+          "path": "<LOCAL_ONLY>/PROJECT_STATE.json",
+          "sha256": "77f710714ed74434a1674829d3d3056e85db74b51aca23e9504bc5c5da84ad99",
+          "workflow_toolkit_path": "workflow_toolkit/video_workflow.py",
+          "resolved_toolkit_path": "<LOCAL_ONLY>/video_workflow.py",
+          "AGENTS_present": true,
+          "toolkit_exists": true,
+          "toolkit_inside_package": true,
+          "AGENTS_sha256": "14b7e5c39bded7258bc940c2200bf8ddfe2d16b4dfac91866000964ca1e9b901",
+          "toolkit_sha256": "f3ddcd43858bef5b734153ffecebd0fd4d9b851669e8748b522bf510295a169a"
+        }
+      ],
+      "proposed_check": "打包后从迁移目录读取唯一状态，确认项目AGENTS存在、workflow_toolkit_path实际落到包内文件，并用该随包工具做validate-state；对依赖已安装工具的回退单独记录，不能把回退成功当包内入口通过。",
+      "scope": "pack-project产生的独立迁移副本及同类目录搬移；检查的是接手入口和工具可发现性，不保证原生媒体重链接或跨机可编辑。",
+      "counterexamples_or_limits": [
+        "用户刻意采用中心工具目录的未迁移工作区，包外路径可以是声明且存在的合法依赖；不能据此要求所有项目复制工具。",
+        "缺少AGENTS的源项目需要主agent判断如何补入口；本候选不证明工具对任何无入口源项目都会自动生成正确约束。",
+        "Python或其他运行环境仍需新机探测；随包Python文件不等于附带运行时。",
+        "加密原生内部绝对路径、缓存兼容、真实视听及第二台电脑未由此验证。"
+      ],
+      "suggested_location": [
+        "toolkit/video_workflow.py的pack_project打包清单与迁移状态路径重写",
+        "tests/test_video_workflow.py的打包后入口/工具实际解析场景",
+        "手册/接手与迁移.md的迁移验收边界；现有规则已覆盖，不新增重复profile或skill要求"
+      ],
+      "existing_coverage": "手册已要求从项目AGENTS接手并带工具、模板和运行要求；learning reference要求先看既有覆盖。本次以实现和验证补齐该要求，无需再建重复长期规则。旧YGT-L01至L10没有这条打包入口故障。",
+      "promotion_status": "recorded_authorized_packaging_fix_already_implemented; no_additional_long_term_rule_promotion",
+      "user_decision": "当前打包修复已经由用户批准实施；本候选记录修复及边界，不把已完成修复描述为未授权。其他长期规则或已发布skill的新改动仍需另行明确授权。",
+      "user_approval": {
+        "record_this_candidate_requires_new_approval": false,
+        "current_packaging_fix_requires_new_approval": false,
+        "additional_long_term_rule_or_published_skill_promotion_requires_approval": true,
+        "additional_promotion_performed_in_this_smoke": false
+      }
+    }
+  ],
+  "publication_note": "记录已批准修复。公开副本仅带脱敏候选和摘要，不包含实际工程状态、迁移文件或原机完整审核报告。"
+}

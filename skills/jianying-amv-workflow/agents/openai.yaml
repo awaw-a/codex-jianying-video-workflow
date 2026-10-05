@@ -1,0 +1,6 @@
+interface:
+  display_name: "剪映制作与接手"
+  short_description: "在Windows剪映制作与接手视频，保留可编辑工程、证据和迁移文件包"
+  default_prompt: "使用 $jianying-amv-workflow 接手我的视频项目，先核对当前工程、约束和待办，再继续制作。"
+policy:
+  allow_implicit_invocation: true

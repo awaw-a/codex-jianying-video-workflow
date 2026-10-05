@@ -1,0 +1,7 @@
+{
+  "record_role": "publication_summary_not_original_review",
+  "original_report_name": "V4本轮原生修改与交付记录.json",
+  "original_report_sha256": "01088f22a522557619c2bdb8d5946fac1a2481284dfbe06aff4337855d03fb61",
+  "summary": "历史原生UI修改包含歌词版式、原声补尾与同步结尾；历史修改/重开证据绑定当时快照，不能转移给指纹不同的当前工程。",
+  "scope_limit": "历史摘要；未在公开副本重新进行实像或听审。原始证据仅保留本地。"
+}

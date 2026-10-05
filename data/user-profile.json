@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "personal-jianying-amv",
+  "revision": "1.0.0",
+  "approved": true,
+  "approval_basis": "用户在21项规划选择后明确要求实施完整计划；有意节奏重放为最后确认的重复规则。",
+  "scope": "该用户的 Windows 剪映动漫／游戏音乐剪辑项目。用户最新明确要求可建立项目例外；不约束无关任务。",
+  "defaults": {
+    "editor": "JianyingPro Windows",
+    "primary_video_types": ["anime_music_edit", "game_music_edit"],
+    "native_editable": true,
+    "native_character_matting_only": true,
+    "reuse_policy": "allow_declared",
+    "human_listening_required_for_final": true,
+    "new_project_discussion": "multiple_rounds_after_environment_inspection",
+    "production_user_review": "complete_first_draft_and_revisions",
+    "fix_obvious_visual_defects_before_first_draft": true,
+    "lyrics_bottom_plate": false,
+    "nondefault_fonts_with_licenses": true,
+    "varied_lyric_entrances": true,
+    "foreground_partial_lyric_occlusion": true,
+    "protect_lyric_keywords_faces_and_action_contacts": true,
+    "out_of_frame_hold": "可见并可感知的保持段；本次1至1.5秒仅为案例，不是所有项目的固定时长",
+    "foreground_handoff_order": ["replace_background", "retain_previous_foreground", "new_character_appears", "previous_foreground_exits", "expand_background"],
+    "original_audio": "多使用与动作或情绪有作用的原声，避免无依据堆叠",
+    "local_bgm_ducking": false,
+    "original_audio_allowed_processing": ["gain", "short_fades", "denoise", "equalization", "moderate_compression", "separate_original_score_when_needed"],
+    "end_with_music": true,
+    "meaningless_tail": false,
+    "boundary_checks": ["whole_used_video_interval_with_context", "source_speech_and_sfx_tails", "rendered_timeline_boundaries"],
+    "secondary_monitor_preferred": true,
+    "collaboration": "as_needed_single_native_engineering_and_ui_writer",
+    "migration": "used_media_native_draft_caches_fonts_licenses_and_original_source_index",
+    "learning": "record_first_propose_important_improvements_promptly_promote_only_after_user_confirmation"
+  },
+  "reuse_definition": {
+    "forbidden": "无意重复使用已出现镜头或来源画面；跨集回放和不同母版同场也需检查",
+    "allowed_when_declared": ["freeze", "reverse", "replay", "loop"],
+    "required_declaration": ["source_identity", "target_interval", "effect_type", "creative_purpose"],
+    "composite_exception": "同一时刻同位前景与背景组成一次画面，不算再次播放；仅同组名不足以证明同位"
+  },
+  "authority": {
+    "native_saved_project": "latest_editable_state",
+    "historical_edl": "design_reference_only_after_native_changes",
+    "state": "single_project_state_entrypoint",
+    "review": "version_and_fingerprint_bound_evidence_with_explicit_limits"
+  },
+  "external_resources": {
+    "public_research_downloads": "autonomous_with_provenance_and_license_record",
+    "already_connected_generation_tools": "autonomous_when_materially_useful",
+    "confirm_before": ["new_paid_service", "new_account", "upload_original_media_to_external_service"],
+    "reference_priority": "中文互联网相关漫剪；只描述实际查看过的区间"
+  },
+  "not_global_defaults": ["1920x1080", "24fps", "120BPM", "2705帧", "固定字体与字号", "每片13组抠像", "日文領域展開字幕"],
+  "confirmed_choices": [
+    "专注视频剪辑", "可用文件包＋中文手册", "接手与持续积累优先", "Windows剪映为主",
+    "个人剪辑规则每项目执行", "先记录再提出升级", "制作时只看完整初版", "主要效果原生可编辑",
+    "无真正听审须用户听审后定稿", "允许有意节奏重放", "按需多agent协作", "跨电脑使用",
+    "已用素材＋原片索引", "原声清理与适度增强", "重要经验及时提案", "动漫／游戏音乐剪辑",
+    "每个新项目多轮讨论", "自行修复明显问题再交初版", "可迁移包＋当前Codex启用",
+    "入门指南＋详细实操资料", "自主用已有工具，新增付费／账号／上传原片另确认"
+  ]
+}

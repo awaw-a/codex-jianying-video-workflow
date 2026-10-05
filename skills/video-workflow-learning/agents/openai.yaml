@@ -1,0 +1,6 @@
+interface:
+  display_name: "视频经验与升级提案"
+  short_description: "从真实剪辑反馈记录可追溯经验，提出有边界的改进而不擅自改变长期规则"
+  default_prompt: "使用 $video-workflow-learning 复盘本次视频制作，区分新增需求和缺陷，记录证据并提出最小升级建议。"
+policy:
+  allow_implicit_invocation: true
